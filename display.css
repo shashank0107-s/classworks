@@ -1,0 +1,235 @@
+* {
+    /* resetting the margin and padding */
+    padding: 0;
+    margin: 0;
+    /* setting box-sizing */
+    box-sizing: border-box;
+
+
+}
+
+body {
+    header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(142, 189, 59);
+        position: fixed;
+        width: 100%;
+        top: 0%;
+
+
+
+        div.logo {
+            height: 100%;
+
+            img {
+                height: 100%;
+                border: 1px solid white;
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    nav {
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+            /* border: 1px solid white; */
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        a:hover {
+            color: rgb(37, 6, 6);
+
+        }
+    }
+
+    main
+    {
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 0;
+        justify-content: space-evenly;
+        
+
+        div.container {
+            /* flex properties */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* end of properties */
+
+            div.card {
+                box-shadow: 1px 1px 5px 2px rgb(20, 220, 187);
+                border-radius: 6px;
+                border: 2px solid;
+                height: 310px;
+                width: 150px;
+                margin-top: 10px;
+                overflow: hidden;
+                transition-duration: 2s;
+
+                div.card_img {
+                    height: 50%;
+                    width: 100%;
+
+                    img {
+                        height: 153px;
+                        width: 147px;
+                        object-fit: cover;
+                    }
+
+                }
+
+                div.card_text {
+                    text-align: center;
+                    background-color: rgba(197, 184, 108, 0.636);
+                    height: 50%;
+
+                    h3 {
+                        height: 30px;
+                    }
+
+                    h5 {
+                        height: 20px;
+                    }
+
+                    p {
+                        height: 70px;
+                        padding: 4px;
+                    }
+
+                    button {
+                        height: 20px;
+                        width: 100px;
+                        padding: 2px;
+                        border-radius: 4px;
+                        border: 0px;
+                        color: white;
+                        font-weight: 600;
+                        background-color: rgb(227, 132, 69);
+
+
+                    }
+
+                }
+
+            }
+
+            div.card:hover {
+                background-color: orange;
+                box-shadow: 1px 2px 5px 2px chocolate;
+                transform: scale(1.05);
+                transition-duration: 0.5s;
+
+
+            }
+        }
+        #location
+        {
+            .grid-container
+            {
+                margin: top 100px;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
+
+                .grid-card
+                {
+                    width: 300px;
+                    box-shadow: 1px 1px 2px;
+                    display: flex;
+                    justify-content: space-between;
+                    .card.img
+                    {
+                        height: 100px;
+                        width: 150px;
+                        overflow: hidden;
+                        img
+                        {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+
+                        }
+                    }
+                    .card-body{
+                        width: 145px;
+                        ul{
+                            height: 100%;
+                            list-style-type: none;
+                            display: flex;
+                        }
+                    }
+                
+                }
+            }
+        }
+
+        div.box-container {
+            /* height: 250px;
+            width: 200px;
+            background-color: rgb(120, 156, 187);
+            border: 2px solid greenyellow; */
+            
+
+            div.box {
+                margin: auto;
+                text-align: center;
+                height: 200px;
+                width: 200px;
+                padding: 15px;
+                background-color: rgb(145, 22, 22);
+                background:url(images/Cake_House_2-removebg-preview.png);
+                background-blend-mode: lighten;
+                background-position: center;
+                border: 2px solid;
+                border-radius: 20px;
+
+                position: fixed;
+                top: 50%;
+                /* bottom: 0; */
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                form {
+                    height: 70%;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 5px;
+
+                    input,
+                    button {
+                        text-align: center;
+                        border-radius: 20px;
+                        margin-top: 10px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+        footer {
+        position: fixed;
+        height: 25px;
+        width:100% ;
+        background-color: olive;
+        color: white;
+        bottom: 0;
+        text-align: center;
+    }
+}

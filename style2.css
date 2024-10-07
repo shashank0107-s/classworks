@@ -1,0 +1,55 @@
+header
+{
+    background-color: rgb(93, 210, 227);
+    color: rgb(49, 103, 151);
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+p.abc{
+    background-color:rgb(101, 189, 91);
+    color:rgb(174, 72, 72);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    height: 100px;
+    width: 150px;
+    font-style:italic;
+    border: 10px solid yellowgreen;
+    border-radius: 20px;
+    
+    img{
+        width: 50%;
+        aspect-ratio:1/1;
+        object-fit:cover;
+
+        
+    }
+}
+main{
+     .box-container
+     {
+        margin: 5px;
+        border: 10px solid;
+        border-style: groove;
+        border-color: black;
+        height: 200px;
+        width: 200px;
+        background-color: blue;}
+
+        .box{
+            margin: auto;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            padding: 5px;
+            background-color: yellow;
+            border: 5px solid;
+            margin: 10px 10px 10px 10px;
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+    }

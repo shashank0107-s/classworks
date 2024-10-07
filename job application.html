@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application</title>
+</head>
+
+<body>
+    <header>
+        <a href="job description.html">click here if your not interested</a>
+        <br>
+        interested candidates can fill the form below
+    </header>
+    <section>
+        <form>
+            <fieldset>
+
+                <legend>
+                    <h3>your personal details</h3>
+                </legend>
+                <label for="First name">First name</label>
+                <input type="text" id="First name" placeholder="type your first name">
+
+                <br>
+
+                <label for="Last name">Last name</label>
+                <input type="text" id="Last name" placeholder="type your last name">
+
+                <br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+
+                <br>
+
+
+
+
+
+            </fieldset>
+            <hr>
+            <h3>Select your Qualification</h3>
+
+
+            <label for="dropdown">select from dropdown</label>
+            <select name="" id="dropdown">
+                <option value="B.tech">select this for B.tech</option>
+                <option value="B.com">select this for B.com</option>
+                <option value="B.E">select this for BE</option>
+            </select>
+            <br>
+            <hr>
+            <h3>Tell us about yourself</h3>
+            <label for="yourself"></label>
+            <textarea name="" id="yourself" cols="30" rows="10"></textarea>
+            <br>
+            <hr>
+            Select the job you want to apply<br>
+
+            <input type="radio" name="choice" id="optionA" value="A">
+            <label for="optionA">Frontend developer</label>
+            <br>
+            <input type="radio" name="choice" id="option b" value="B">
+            <label for="optionB">Backend developer</label>
+            <br>
+            <input type="radio" name="choice" id="optionC" value="c">
+            <label for="optionC">Fullstack developer</label>
+            <br>
+
+            <hr>
+            <fieldset>
+                <legend>Legall section</legend>
+                <label for="work-authorization">Are you legally authorized to work in this country?</label><br>
+                <input type="radio" id="work-yes" name="work-authorization" value="Yes">
+                <label for="work-yes">Yes</label><br>
+                <input type="radio" id="work-no" name="work-authorization" value="No">
+                <label for="work-no">No</label><br><br>
+
+                <label for="visa-sponsorship">Do you require visa sponsorship now or in the future?</label><br>
+                <input type="radio" id="visa-yes" name="visa-sponsorship" value="Yes">
+                <label for="visa-yes">Yes</label><br>
+                <input type="radio" id="visa-no" name="visa-sponsorship" value="No">
+                <label for="visa-no">No</label><br>
+                     
+            </fieldset>
+            <br>
+            <label for="fileupload">upload your resume here</label>
+            <input type="file" id="fileupload">
+            <br><br>
+            <input type="button" value="submit">
+        </form>
+    </section>
+</body>
+
+</html>
